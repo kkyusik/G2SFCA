@@ -1,10 +1,6 @@
 # Generalized 2SFCA
 
-
-
-This generalized two-step catchment area (G2SFCA) method was used in Kim, K., & Kwon, K. (2022). Time-varying spatial accessibility of primary healthcare services based on spatiotemporal variations in demand, supply, and traffic conditions: A case study of Seoul, South Korea. *Journal of Transport & Health*, *27*, 101531. [[Link](https://www.sciencedirect.com/science/article/pii/S2214140522002031)]
-
-
+This code for generalized two-step catchment area (G2SFCA) method was used in Kim, K., & Kwon, K. (2022). Time-varying spatial accessibility of primary healthcare services based on spatiotemporal variations in demand, supply, and traffic conditions: A case study of Seoul, South Korea. *Journal of Transport & Health*, *27*, 101531. [[Link](https://www.sciencedirect.com/science/article/pii/S2214140522002031)]
 
 접근성 지표는 다음의 수식으로 계산된다. 
 
@@ -14,13 +10,9 @@ $A_i = \sum_j \frac{S_j f(d_{ij})} { \sum_k P_k f(d_{kj})}$
 
 $f(d_{ij})$는 거리/시간 조락 함수이며, power, negative exponential 또는 Gaussian 함수가 이용된다. Kim and Kwon (2022) 연구에서는 Gaussian 함수를 이용했으며, catchment area를 15분으로 설정했기 때문에 15분 한계거리에서 $f(d_{ij})$를 0.01로 만드는 Gaussian의 $\beta 파라미터로 50을 이용했다. 
 
-
-
 Gaussian 함수 수식:
 
 $f(d_{ij}) = exp^{-d_{ij}^2/\beta}$
-
-
 
 G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터들을 필요로 한다. 
 
@@ -43,8 +35,6 @@ G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터
 * `catchment`: 한계 거리 또는 시간 설정
 
 * `impedance_beta`: Gaussian 함수의 $\beta$ 파라미터
-
-
 
 기본적인 데이터 구성은 다음과 같다.
 
@@ -73,8 +63,6 @@ G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터
 | .<br/>.<br/>. | .<br/>.<br/>. |
 
 샘플 데이터에서 알 수 있듯이, `network_data`는 demand 데이터의 `id`와 supply 데이터의 `id`를 공유해야 한다. 
-
-
 
 G2SFCA의 결과는 다음의 그림과 같다. 
 
