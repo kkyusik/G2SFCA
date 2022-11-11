@@ -78,8 +78,4 @@ G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터
 
 G2SFCA의 결과는 다음의 그림과 같다. 
 
-
-
-
-
-![](./fig/sample_outcome.png)
+<img src="./fig/sample_outcome.png" title="" alt="" width="334">
