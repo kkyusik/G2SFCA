@@ -71,3 +71,11 @@ G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터
 | hkh5592       | 2             |
 | kkn4421       | 5             |
 | .<br/>.<br/>. | .<br/>.<br/>. |
+
+샘플 데이터에서 알 수 있듯이, `network_data`는 demand 데이터의 `id`와 supply 데이터의 `id`를 공유해야 한다. 
+
+
+
+G2SFCA의 결과는 다음의 그림과 같다. 
+
+![sample_outcome.png](E:\Projects_E\G2SFCA\fig\sample_outcome.png)
