@@ -14,25 +14,25 @@ Gaussian 함수 수식: $f(d_{ij}) = exp^{-d_{ij}^2/\beta}$
 
 G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터들을 필요로 한다. 
 
-* `network_data`: 이미 계산된 OD cost matrix
+* `network_data`: 이미 계산된 OD cost matrix (data.frame object)
 
-* `cost_col`: `network_data`에 포함된 distance 또는 time 열의 이름
+* `cost_col`: `network_data`에 포함된 distance 또는 time 열의 이름 (string)
 
-* `demand_data`: 수요 자료의 이름
+* `demand_data`: 수요 자료의 이름 (data.frame)
 
-* `demand_id`: 수요 자료에서 id의 열 이름
+* `demand_id`: 수요 자료에서 id의 열 이름 (string)
 
-* `demand_col`: 수요 자료에서 수요를 의미하는 열 이름
+* `demand_col`: 수요 자료에서 수요를 의미하는 열 이름 (string)
 
-* `supply_data`: 공급 자료의 이름
+* `supply_data`: 공급 자료의 이름 (data.frame object)
 
-* `supply_id`: 공급 자료에서 id의 열 이름
+* `supply_id`: 공급 자료에서 id의 열 이름 (string)
 
-* `supply_col`: 공급자료에서 공급을 의미하는 열 이름
+* `supply_col`: 공급자료에서 공급을 의미하는 열 이름 (string)
 
-* `catchment`: 한계 거리 또는 시간 설정
+* `catchment`: 한계 거리 또는 시간 설정 (numeric)
 
-* `impedance_beta`: Gaussian 함수의 $\beta$ 파라미터
+* `impedance_beta`: Gaussian 함수의 $\beta$ 파라미터 (numeric)
 
 기본적인 데이터 구성은 다음과 같다.
 
