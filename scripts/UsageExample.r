@@ -1,3 +1,12 @@
+#' @title Usage example of G2SFCA (Kim and Kwon 2022)
+#' @author Kyusik Kim
+#' @description Calculate G2SFCA using sample data
+#' @import 
+#'      data.table
+#'      tidy.verse
+#'      sf
+#'      tmap
+
 requiredPackages <- c("data.table", "tidyverse", "sf", "tmap")
 for (p in requiredPackages) {
     if (!require(p, character.only = TRUE)) install.packages(p)

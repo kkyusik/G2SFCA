@@ -1,4 +1,21 @@
-
+#' @title G2SFCA function
+#' @author Kyusik Kim
+#' @import data.table
+#' @param 
+#'      network_data
+#'      cost_col
+#'      demand_data
+#'      demand_id
+#'      demand_col
+#'      supply_data
+#'      supply_id
+#'      supply_col
+#'      catchment
+#'      impedance_beta
+#' @usage  
+#'      result <- Generalized2SFCA()
+#'      rj <- result[[1]]
+#'      ai <- result[[2]]
 
 requiredPackages = c("data.table")
 for (p in requiredPackages) {
