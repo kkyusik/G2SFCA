@@ -10,7 +10,7 @@ for (p in requiredPackages) {
 #' This method was developed by Dai (2010), but the Gaussian function is replaced by e^{-d{ij}^2 / beta}
 
 Generalized2SFCA <- function(network_data,
-                            cost_col,
+                             cost_col,
                              demand_data,
                              demand_id,
                              demand_col,
@@ -46,7 +46,6 @@ Generalized2SFCA <- function(network_data,
         #' Gaussian distance decay function
         #' W = e^(-d^2/a)
         exp(-dij^2 / beta)
-        
     }
 
     cat("Procedure started for", demand_col)
@@ -75,7 +74,7 @@ Generalized2SFCA <- function(network_data,
     network_data <- merge(network_data, demand_data, all.x = T, by = demand_id)
     network_data <- merge(network_data, supply_data, all.x = T, by = supply_id)
     network_data <- network_data[get(cost_col) <= catchment] # Filtering demand and supply within the catchment area threshold.
-    #network_data[[cost_col]][network_data[[cost_col]] == 0] <- 0.001 # 0 to 0.001 
+    # network_data[[cost_col]][network_data[[cost_col]] == 0] <- 0.001 # 0 to 0.001
 
     ## Drop rows with no demand or supply information
     network_data <- network_data[!is.na(get(supply_col)), ]
