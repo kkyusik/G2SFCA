@@ -49,4 +49,5 @@ seoul <- seoul %>%
     left_join(ai_res, by = c("TOT_REG_CD" = "demand_id"))
 
 tm_shape(seoul) +
-    tm_fill(col = "Ai", style = "quantile")
+    tm_fill(col = "Ai", style = "quantile", n = 5) +
+    tm_borders(col = 'gray60', lwd = 0.5)
