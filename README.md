@@ -18,7 +18,7 @@ G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터
 
 * `cost_col`: `network_data`에 포함된 distance 또는 time 열의 이름 (string)
 
-* `demand_data`: 수요 자료의 이름 (data.frame)
+* `demand_data`: 수요 자료의 이름 (data.frame object)
 
 * `demand_id`: 수요 자료에서 id의 열 이름 (string)
 
