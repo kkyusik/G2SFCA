@@ -50,4 +50,4 @@ seoul <- seoul %>%
 
 tm_shape(seoul) +
     tm_fill(col = "Ai", style = "quantile", n = 5) +
-    tm_borders(col = 'gray60', lwd = 0.5)
+    tm_borders(col = 'gray40', lwd = .7)
