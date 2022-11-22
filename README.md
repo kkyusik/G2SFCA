@@ -65,3 +65,21 @@ G2SFCA를 계산하기 위한 Generalized2SFCA 함수는 몇 가지 파라미터
 G2SFCA의 결과는 다음의 그림과 같다. 
 
 <img src="./fig/sample_outcome.png" title="" alt="" width="334">
+
+
+
+
+
+# Road network travel time 계산
+
+Traffic congestion을 고려한 road network travel time을 계산하기 위해 R에서 국가교통DB와 [서울시교통정보](https://topis.seoul.go.kr/)의 차량통행속도를 매칭시켜 도로망 자료를 구축. 
+
+서울특별시 교통소통 [표준링크 매핑정보](http://data.seoul.go.kr/dataList/OA-15061/S/1/datasetView.do)를 이용해 연계. 
+
+각 시간별 traffic congestion을 계산하는 코드는 `sciprts/GetRoadNetwork.R` 에서 수행할 수 있으며, **차량통행속도**, **표준링크 매핑정보**, **도로망 shapefile**, **시도 shapefile**이 필요함. 
+
+해당 코드로부터 **road_network_ktdb**를 만든 후, Python을 이용해 road network travel time을 계산. 
+
+Road network travel time은 `scripts/Arcpy_NetworkAnalysis.py`를 이용해 계산함. 이 코드는 ArcGIS Pro의 ArcPy를 이용하기 때문에, ArcGIS Pro가 설치되어 있어야 하며, PyCharm 또는 VisualStudioCode에서 Python Interpreter가 Python 3.7 (arcgispro-py3) 버전으로 설정되어야 함.
+
+실행 방식은 ArcGIS에서 network geodatabase를 먼저 만들어 준 뒤, `GetRoadNetwork.R`에서 만든 `road_network_ktdb`를 network dataset으로 변환해야 함. 이때 network geodatabase 안에 출발지와 도착지 정보 모두 포함되어야 함. 
