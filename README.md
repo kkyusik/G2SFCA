@@ -1,6 +1,6 @@
 # Generalized 2SFCA
 
-This code for the generalized two-step catchment area (G2SFCA) method was used in Kim, K., & Kwon, K. (2022). Time-varying spatial accessibility of primary healthcare services based on spatiotemporal variations in demand, supply, and traffic conditions: A case study of Seoul, South Korea. *Journal of Transport & Health*, *27*, 101531. [[Link](https://www.sciencedirect.com/science/article/pii/S2214140522002031)]
+This code for the generalized two-step floating catchment area (G2SFCA) method was used in Kim, K., & Kwon, K. (2022). Time-varying spatial accessibility of primary healthcare services based on spatiotemporal variations in demand, supply, and traffic conditions: A case study of Seoul, South Korea. *Journal of Transport & Health*, *27*, 101531. [[Link](https://www.sciencedirect.com/science/article/pii/S2214140522002031)]
 
 접근성 지표는 다음의 수식으로 계산된다. 
 
