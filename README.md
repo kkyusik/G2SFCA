@@ -83,3 +83,11 @@ Traffic congestion을 고려한 road network travel time을 계산하기 위해 
 Road network travel time은 `scripts/Arcpy_NetworkAnalysis.py`를 이용해 계산함. 이 코드는 ArcGIS Pro의 ArcPy를 이용하기 때문에, ArcGIS Pro가 설치되어 있어야 하며, PyCharm 또는 VisualStudioCode에서 Python Interpreter가 Python 3.7 (arcgispro-py3) 버전으로 설정되어야 함.
 
 실행 방식은 ArcGIS에서 network geodatabase를 먼저 만들어 준 뒤, `GetRoadNetwork.R`에서 만든 `road_network_ktdb`를 network dataset으로 변환해야 함. 이때 network geodatabase 안에 출발지와 도착지 정보 모두 포함되어야 함. 
+
+
+
+
+
+# Miscellaneous
+
+* **SplitOrigins.py**: 집계구를 10개로 나누는 파이썬 코드. Network analysis를 위해 집계구를 10개로 나누어야 함. 
